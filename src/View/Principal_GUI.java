@@ -27,20 +27,97 @@ public class Principal_GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        panelImage1 = new org.edisoncor.gui.panel.PanelImage();
+        AnimalBtn = new org.edisoncor.gui.button.ButtonIcon();
+        VetBtn = new org.edisoncor.gui.button.ButtonIcon();
+        VacBtn = new org.edisoncor.gui.button.ButtonIcon();
+        AbateBtn = new org.edisoncor.gui.button.ButtonIcon();
+        AnimalsGroupBtn = new org.edisoncor.gui.button.ButtonIcon();
+        labelCustom1 = new org.edisoncor.gui.label.LabelCustom();
+        labelCustom2 = new org.edisoncor.gui.label.LabelCustom();
+        labelCustom3 = new org.edisoncor.gui.label.LabelCustom();
+        labelCustom4 = new org.edisoncor.gui.label.LabelCustom();
+        labelCustom5 = new org.edisoncor.gui.label.LabelCustom();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sistema para gerenciamento");
+        setUndecorated(true);
+
+        panelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/fundo2.jpg"))); // NOI18N
+        panelImage1.setLayout(null);
+
+        AnimalBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/AnimalBtn.png"))); // NOI18N
+        AnimalBtn.setText("buttonIcon1");
+        panelImage1.add(AnimalBtn);
+        AnimalBtn.setBounds(260, 260, 140, 110);
+
+        VetBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/VetBtn.png"))); // NOI18N
+        VetBtn.setText("buttonIcon1");
+        panelImage1.add(VetBtn);
+        VetBtn.setBounds(260, 70, 140, 110);
+
+        VacBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/VacBtn.png"))); // NOI18N
+        VacBtn.setText("buttonIcon1");
+        panelImage1.add(VacBtn);
+        VacBtn.setBounds(460, 70, 140, 110);
+
+        AbateBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/AbateBtn.png"))); // NOI18N
+        AbateBtn.setText("buttonIcon2");
+        panelImage1.add(AbateBtn);
+        AbateBtn.setBounds(60, 70, 140, 110);
+
+        AnimalsGroupBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Grupo de Animais"), "Grupo de Animais"));
+        AnimalsGroupBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/AnimalsGroupBtn.png"))); // NOI18N
+        AnimalsGroupBtn.setText("Grupo de Animais");
+        AnimalsGroupBtn.setName(""); // NOI18N
+        panelImage1.add(AnimalsGroupBtn);
+        AnimalsGroupBtn.setBounds(60, 260, 140, 110);
+
+        labelCustom1.setText("Grupo de Animais");
+        panelImage1.add(labelCustom1);
+        labelCustom1.setBounds(260, 210, 140, 30);
+
+        labelCustom2.setText("Animais");
+        panelImage1.add(labelCustom2);
+        labelCustom2.setBounds(60, 210, 140, 30);
+
+        labelCustom3.setText("Veterinário");
+        panelImage1.add(labelCustom3);
+        labelCustom3.setBounds(260, 20, 140, 30);
+
+        labelCustom4.setText("Abate");
+        panelImage1.add(labelCustom4);
+        labelCustom4.setBounds(60, 20, 140, 30);
+
+        labelCustom5.setText("Vacinados");
+        panelImage1.add(labelCustom5);
+        labelCustom5.setBounds(460, 20, 140, 30);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelImage1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelImage1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(660, 424));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -79,5 +156,17 @@ public class Principal_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private org.edisoncor.gui.button.ButtonIcon AbateBtn;
+    private org.edisoncor.gui.button.ButtonIcon AnimalBtn;
+    private org.edisoncor.gui.button.ButtonIcon AnimalsGroupBtn;
+    private org.edisoncor.gui.button.ButtonIcon VacBtn;
+    private org.edisoncor.gui.button.ButtonIcon VetBtn;
+    private javax.swing.JPanel jPanel1;
+    private org.edisoncor.gui.label.LabelCustom labelCustom1;
+    private org.edisoncor.gui.label.LabelCustom labelCustom2;
+    private org.edisoncor.gui.label.LabelCustom labelCustom3;
+    private org.edisoncor.gui.label.LabelCustom labelCustom4;
+    private org.edisoncor.gui.label.LabelCustom labelCustom5;
+    private org.edisoncor.gui.panel.PanelImage panelImage1;
     // End of variables declaration//GEN-END:variables
 }

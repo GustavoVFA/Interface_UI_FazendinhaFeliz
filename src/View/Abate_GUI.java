@@ -27,21 +27,82 @@ public class Abate_GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        panelImage1 = new org.edisoncor.gui.panel.PanelImage();
+        labelCustom1 = new org.edisoncor.gui.label.LabelCustom();
+        IDAnimal_Abate = new javax.swing.JTextField();
+        labelCustom2 = new org.edisoncor.gui.label.LabelCustom();
+        labelCustom3 = new org.edisoncor.gui.label.LabelCustom();
+        IDGrupo_Abate = new javax.swing.JTextField();
+        PesoAbate_Abate = new javax.swing.JFormattedTextField();
+        labelCustom4 = new org.edisoncor.gui.label.LabelCustom();
+        labelCustom5 = new org.edisoncor.gui.label.LabelCustom();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+
+        panelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/fundo2.jpg"))); // NOI18N
+        panelImage1.setLayout(null);
+
+        labelCustom1.setText("Peso Abate");
+        panelImage1.add(labelCustom1);
+        labelCustom1.setBounds(20, 220, 100, 30);
+
+        IDAnimal_Abate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IDAnimal_AbateActionPerformed(evt);
+            }
+        });
+        panelImage1.add(IDAnimal_Abate);
+        IDAnimal_Abate.setBounds(130, 100, 170, 30);
+
+        labelCustom2.setText("ID Abate");
+        panelImage1.add(labelCustom2);
+        labelCustom2.setBounds(20, 40, 100, 30);
+
+        labelCustom3.setText("ID Grupo");
+        panelImage1.add(labelCustom3);
+        labelCustom3.setBounds(20, 160, 100, 30);
+
+        IDGrupo_Abate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IDGrupo_AbateActionPerformed(evt);
+            }
+        });
+        panelImage1.add(IDGrupo_Abate);
+        IDGrupo_Abate.setBounds(130, 160, 170, 30);
+        panelImage1.add(PesoAbate_Abate);
+        PesoAbate_Abate.setBounds(130, 220, 170, 30);
+
+        labelCustom4.setText("ID Animal");
+        panelImage1.add(labelCustom4);
+        labelCustom4.setBounds(20, 100, 100, 30);
+
+        labelCustom5.setText("labelCustom5");
+        panelImage1.add(labelCustom5);
+        labelCustom5.setBounds(130, 40, 170, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(panelImage1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(panelImage1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(660, 424));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void IDAnimal_AbateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDAnimal_AbateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IDAnimal_AbateActionPerformed
+
+    private void IDGrupo_AbateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDGrupo_AbateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IDGrupo_AbateActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +140,14 @@ public class Abate_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField IDAnimal_Abate;
+    private javax.swing.JTextField IDGrupo_Abate;
+    private javax.swing.JFormattedTextField PesoAbate_Abate;
+    private org.edisoncor.gui.label.LabelCustom labelCustom1;
+    private org.edisoncor.gui.label.LabelCustom labelCustom2;
+    private org.edisoncor.gui.label.LabelCustom labelCustom3;
+    private org.edisoncor.gui.label.LabelCustom labelCustom4;
+    private org.edisoncor.gui.label.LabelCustom labelCustom5;
+    private org.edisoncor.gui.panel.PanelImage panelImage1;
     // End of variables declaration//GEN-END:variables
 }
