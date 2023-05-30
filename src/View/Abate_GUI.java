@@ -28,6 +28,8 @@ public class Abate_GUI extends javax.swing.JFrame {
     private void initComponents() {
 
         panelImage1 = new org.edisoncor.gui.panel.PanelImage();
+        voltarAbate = new org.edisoncor.gui.button.ButtonAero();
+        jPanel1 = new javax.swing.JPanel();
         labelCustom1 = new org.edisoncor.gui.label.LabelCustom();
         IDAnimal_Abate = new javax.swing.JTextField();
         labelCustom2 = new org.edisoncor.gui.label.LabelCustom();
@@ -36,6 +38,7 @@ public class Abate_GUI extends javax.swing.JFrame {
         PesoAbate_Abate = new javax.swing.JFormattedTextField();
         labelCustom4 = new org.edisoncor.gui.label.LabelCustom();
         labelCustom5 = new org.edisoncor.gui.label.LabelCustom();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -43,43 +46,63 @@ public class Abate_GUI extends javax.swing.JFrame {
         panelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/fundo2.jpg"))); // NOI18N
         panelImage1.setLayout(null);
 
+        voltarAbate.setText("Voltar");
+        voltarAbate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                voltarAbateActionPerformed(evt);
+            }
+        });
+        panelImage1.add(voltarAbate);
+        voltarAbate.setBounds(560, 360, 80, 25);
+
+        jPanel1.setLayout(null);
+
         labelCustom1.setText("Peso Abate");
-        panelImage1.add(labelCustom1);
-        labelCustom1.setBounds(20, 220, 100, 30);
+        jPanel1.add(labelCustom1);
+        labelCustom1.setBounds(70, 260, 100, 30);
 
         IDAnimal_Abate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IDAnimal_AbateActionPerformed(evt);
             }
         });
-        panelImage1.add(IDAnimal_Abate);
-        IDAnimal_Abate.setBounds(130, 100, 170, 30);
+        jPanel1.add(IDAnimal_Abate);
+        IDAnimal_Abate.setBounds(180, 140, 170, 30);
 
         labelCustom2.setText("ID Abate");
-        panelImage1.add(labelCustom2);
-        labelCustom2.setBounds(20, 40, 100, 30);
+        jPanel1.add(labelCustom2);
+        labelCustom2.setBounds(70, 80, 100, 30);
 
         labelCustom3.setText("ID Grupo");
-        panelImage1.add(labelCustom3);
-        labelCustom3.setBounds(20, 160, 100, 30);
+        jPanel1.add(labelCustom3);
+        labelCustom3.setBounds(70, 200, 100, 30);
 
         IDGrupo_Abate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IDGrupo_AbateActionPerformed(evt);
             }
         });
-        panelImage1.add(IDGrupo_Abate);
-        IDGrupo_Abate.setBounds(130, 160, 170, 30);
-        panelImage1.add(PesoAbate_Abate);
-        PesoAbate_Abate.setBounds(130, 220, 170, 30);
+        jPanel1.add(IDGrupo_Abate);
+        IDGrupo_Abate.setBounds(180, 200, 170, 30);
+        jPanel1.add(PesoAbate_Abate);
+        PesoAbate_Abate.setBounds(180, 260, 170, 30);
 
         labelCustom4.setText("ID Animal");
-        panelImage1.add(labelCustom4);
-        labelCustom4.setBounds(20, 100, 100, 30);
+        jPanel1.add(labelCustom4);
+        labelCustom4.setBounds(70, 140, 100, 30);
 
         labelCustom5.setText("labelCustom5");
-        panelImage1.add(labelCustom5);
-        labelCustom5.setBounds(130, 40, 170, 30);
+        jPanel1.add(labelCustom5);
+        labelCustom5.setBounds(180, 80, 170, 30);
+
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Formulário Abate");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(100, 10, 240, 40);
+
+        panelImage1.add(jPanel1);
+        jPanel1.setBounds(40, 40, 430, 330);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -103,6 +126,10 @@ public class Abate_GUI extends javax.swing.JFrame {
     private void IDGrupo_AbateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDGrupo_AbateActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_IDGrupo_AbateActionPerformed
+
+    private void voltarAbateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarAbateActionPerformed
+       Abate_GUI.this.dispose();
+    }//GEN-LAST:event_voltarAbateActionPerformed
 
     /**
      * @param args the command line arguments
@@ -134,7 +161,6 @@ public class Abate_GUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Abate_GUI().setVisible(true);
             }
         });
     }
@@ -143,11 +169,14 @@ public class Abate_GUI extends javax.swing.JFrame {
     private javax.swing.JTextField IDAnimal_Abate;
     private javax.swing.JTextField IDGrupo_Abate;
     private javax.swing.JFormattedTextField PesoAbate_Abate;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private org.edisoncor.gui.label.LabelCustom labelCustom1;
     private org.edisoncor.gui.label.LabelCustom labelCustom2;
     private org.edisoncor.gui.label.LabelCustom labelCustom3;
     private org.edisoncor.gui.label.LabelCustom labelCustom4;
     private org.edisoncor.gui.label.LabelCustom labelCustom5;
     private org.edisoncor.gui.panel.PanelImage panelImage1;
+    private org.edisoncor.gui.button.ButtonAero voltarAbate;
     // End of variables declaration//GEN-END:variables
 }
