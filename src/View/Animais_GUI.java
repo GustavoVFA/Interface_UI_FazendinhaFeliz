@@ -9,12 +9,12 @@ package View;
  *
  * @author LAB4M10
  */
-public class Abate_GUI extends javax.swing.JFrame {
+public class Animais_GUI extends javax.swing.JFrame {
 
     /**
-     * Creates new form Abate_GUI
+     * Creates new form Grupos_GUI
      */
-    public Abate_GUI() {
+    public Animais_GUI() {
         initComponents();
     }
 
@@ -32,13 +32,13 @@ public class Abate_GUI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         PesoAbate_Label = new org.edisoncor.gui.label.LabelCustom();
         IDAnimal_Abate = new javax.swing.JTextField();
-        IDAbate_Label = new org.edisoncor.gui.label.LabelCustom();
-        IDGrupoAbate_Label = new org.edisoncor.gui.label.LabelCustom();
-        IDGrupo_Abate = new javax.swing.JTextField();
-        PesoAbate_Abate = new javax.swing.JFormattedTextField();
+        IDVacinaVac_Label = new org.edisoncor.gui.label.LabelCustom();
+        VacinadoVac_Label = new org.edisoncor.gui.label.LabelCustom();
+        Vacinado_Vac = new javax.swing.JTextField();
         IDAnimalAbate_Label = new org.edisoncor.gui.label.LabelCustom();
         IDAbate_Mostra = new org.edisoncor.gui.label.LabelCustom();
         jLabel1 = new javax.swing.JLabel();
+        Vacinado_Vac1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -57,9 +57,9 @@ public class Abate_GUI extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        PesoAbate_Label.setText("Peso Abate");
+        PesoAbate_Label.setText("ID Grupo");
         jPanel1.add(PesoAbate_Label);
-        PesoAbate_Label.setBounds(70, 260, 100, 30);
+        PesoAbate_Label.setBounds(110, 260, 100, 30);
 
         IDAnimal_Abate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,42 +67,48 @@ public class Abate_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(IDAnimal_Abate);
-        IDAnimal_Abate.setBounds(180, 140, 170, 30);
+        IDAnimal_Abate.setBounds(220, 140, 180, 30);
 
-        IDAbate_Label.setText("ID Abate");
-        jPanel1.add(IDAbate_Label);
-        IDAbate_Label.setBounds(70, 80, 100, 30);
+        IDVacinaVac_Label.setText("ID Animal");
+        jPanel1.add(IDVacinaVac_Label);
+        IDVacinaVac_Label.setBounds(110, 80, 100, 30);
 
-        IDGrupoAbate_Label.setText("ID Grupo");
-        jPanel1.add(IDGrupoAbate_Label);
-        IDGrupoAbate_Label.setBounds(70, 200, 100, 30);
+        VacinadoVac_Label.setText("Peso");
+        jPanel1.add(VacinadoVac_Label);
+        VacinadoVac_Label.setBounds(110, 200, 100, 30);
 
-        IDGrupo_Abate.addActionListener(new java.awt.event.ActionListener() {
+        Vacinado_Vac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                IDGrupo_AbateActionPerformed(evt);
+                Vacinado_VacActionPerformed(evt);
             }
         });
-        jPanel1.add(IDGrupo_Abate);
-        IDGrupo_Abate.setBounds(180, 200, 170, 30);
-        jPanel1.add(PesoAbate_Abate);
-        PesoAbate_Abate.setBounds(180, 260, 170, 30);
+        jPanel1.add(Vacinado_Vac);
+        Vacinado_Vac.setBounds(220, 260, 180, 30);
 
-        IDAnimalAbate_Label.setText("ID Animal");
+        IDAnimalAbate_Label.setText("Idade");
         jPanel1.add(IDAnimalAbate_Label);
-        IDAnimalAbate_Label.setBounds(70, 140, 100, 30);
+        IDAnimalAbate_Label.setBounds(110, 140, 100, 30);
 
         IDAbate_Mostra.setText("labelCustom5");
         jPanel1.add(IDAbate_Mostra);
-        IDAbate_Mostra.setBounds(180, 80, 170, 30);
+        IDAbate_Mostra.setBounds(220, 80, 180, 30);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Formulário Abate");
+        jLabel1.setText("Formulário Animais");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(100, 10, 240, 40);
+        jLabel1.setBounds(110, 10, 300, 40);
+
+        Vacinado_Vac1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Vacinado_Vac1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Vacinado_Vac1);
+        Vacinado_Vac1.setBounds(220, 200, 180, 30);
 
         panelImage1.add(jPanel1);
-        jPanel1.setBounds(40, 40, 430, 330);
+        jPanel1.setBounds(40, 40, 510, 330);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -119,17 +125,21 @@ public class Abate_GUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void voltarAbateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarAbateActionPerformed
+        Animais_GUI.this.dispose();
+    }//GEN-LAST:event_voltarAbateActionPerformed
+
     private void IDAnimal_AbateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDAnimal_AbateActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_IDAnimal_AbateActionPerformed
 
-    private void IDGrupo_AbateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDGrupo_AbateActionPerformed
+    private void Vacinado_VacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Vacinado_VacActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_IDGrupo_AbateActionPerformed
+    }//GEN-LAST:event_Vacinado_VacActionPerformed
 
-    private void voltarAbateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarAbateActionPerformed
-       Abate_GUI.this.dispose();
-    }//GEN-LAST:event_voltarAbateActionPerformed
+    private void Vacinado_Vac1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Vacinado_Vac1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Vacinado_Vac1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -148,32 +158,34 @@ public class Abate_GUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Abate_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Animais_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Abate_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Animais_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Abate_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Animais_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Abate_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Animais_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                new Animais_GUI().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private org.edisoncor.gui.label.LabelCustom IDAbate_Label;
     private org.edisoncor.gui.label.LabelCustom IDAbate_Mostra;
     private org.edisoncor.gui.label.LabelCustom IDAnimalAbate_Label;
     private javax.swing.JTextField IDAnimal_Abate;
-    private org.edisoncor.gui.label.LabelCustom IDGrupoAbate_Label;
-    private javax.swing.JTextField IDGrupo_Abate;
-    private javax.swing.JFormattedTextField PesoAbate_Abate;
+    private org.edisoncor.gui.label.LabelCustom IDVacinaVac_Label;
     private org.edisoncor.gui.label.LabelCustom PesoAbate_Label;
+    private org.edisoncor.gui.label.LabelCustom VacinadoVac_Label;
+    private javax.swing.JTextField Vacinado_Vac;
+    private javax.swing.JTextField Vacinado_Vac1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private org.edisoncor.gui.panel.PanelImage panelImage1;

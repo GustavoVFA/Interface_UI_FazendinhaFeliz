@@ -42,7 +42,6 @@ public class Principal_GUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema para gerenciamento");
-        setUndecorated(true);
 
         panelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/fundo2.jpg"))); // NOI18N
         panelImage1.setLayout(null);
@@ -50,49 +49,69 @@ public class Principal_GUI extends javax.swing.JFrame {
         AnimalBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/AnimalBtn.png"))); // NOI18N
         AnimalBtn.setText("buttonIcon1");
         panelImage1.add(AnimalBtn);
-        AnimalBtn.setBounds(260, 260, 140, 110);
+        AnimalBtn.setBounds(260, 280, 140, 110);
 
         VetBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/VetBtn.png"))); // NOI18N
         VetBtn.setText("buttonIcon1");
+        VetBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VetBtnActionPerformed(evt);
+            }
+        });
         panelImage1.add(VetBtn);
-        VetBtn.setBounds(260, 70, 140, 110);
+        VetBtn.setBounds(260, 90, 140, 110);
 
         VacBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/VacBtn.png"))); // NOI18N
         VacBtn.setText("buttonIcon1");
+        VacBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VacBtnActionPerformed(evt);
+            }
+        });
         panelImage1.add(VacBtn);
-        VacBtn.setBounds(460, 70, 140, 110);
+        VacBtn.setBounds(460, 90, 140, 110);
 
         AbateBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/AbateBtn.png"))); // NOI18N
         AbateBtn.setText("buttonIcon2");
+        AbateBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AbateBtnActionPerformed(evt);
+            }
+        });
         panelImage1.add(AbateBtn);
-        AbateBtn.setBounds(60, 70, 140, 110);
+        AbateBtn.setBounds(60, 90, 140, 110);
 
         AnimalsGroupBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Grupo de Animais"), "Grupo de Animais"));
         AnimalsGroupBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/AnimalsGroupBtn.png"))); // NOI18N
         AnimalsGroupBtn.setText("Grupo de Animais");
         AnimalsGroupBtn.setName(""); // NOI18N
+        AnimalsGroupBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnimalsGroupBtnActionPerformed(evt);
+            }
+        });
         panelImage1.add(AnimalsGroupBtn);
-        AnimalsGroupBtn.setBounds(60, 260, 140, 110);
+        AnimalsGroupBtn.setBounds(60, 280, 140, 110);
 
         labelCustom1.setText("Grupo de Animais");
         panelImage1.add(labelCustom1);
-        labelCustom1.setBounds(260, 210, 140, 30);
+        labelCustom1.setBounds(260, 230, 140, 30);
 
         labelCustom2.setText("Animais");
         panelImage1.add(labelCustom2);
-        labelCustom2.setBounds(60, 210, 140, 30);
+        labelCustom2.setBounds(60, 230, 140, 30);
 
         labelCustom3.setText("Veterinário");
         panelImage1.add(labelCustom3);
-        labelCustom3.setBounds(260, 20, 140, 30);
+        labelCustom3.setBounds(260, 40, 140, 30);
 
         labelCustom4.setText("Abate");
         panelImage1.add(labelCustom4);
-        labelCustom4.setBounds(60, 20, 140, 30);
+        labelCustom4.setBounds(60, 40, 140, 30);
 
         labelCustom5.setText("Vacinados");
         panelImage1.add(labelCustom5);
-        labelCustom5.setBounds(460, 20, 140, 30);
+        labelCustom5.setBounds(460, 40, 140, 30);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -116,9 +135,25 @@ public class Principal_GUI extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(660, 424));
+        setSize(new java.awt.Dimension(676, 463));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void AbateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbateBtnActionPerformed
+        new Abate_GUI().setVisible(true);
+    }//GEN-LAST:event_AbateBtnActionPerformed
+
+    private void VetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VetBtnActionPerformed
+       new Vet_GUI().setVisible(true);
+    }//GEN-LAST:event_VetBtnActionPerformed
+
+    private void VacBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VacBtnActionPerformed
+       new Vacinados_GUI().setVisible(true);
+    }//GEN-LAST:event_VacBtnActionPerformed
+
+    private void AnimalsGroupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnimalsGroupBtnActionPerformed
+        new Animais_GUI().setVisible(true);
+    }//GEN-LAST:event_AnimalsGroupBtnActionPerformed
 
     /**
      * @param args the command line arguments
